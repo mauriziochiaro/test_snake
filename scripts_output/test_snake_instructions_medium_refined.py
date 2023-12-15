@@ -60,18 +60,22 @@ def quit_game():
 def go_up():
     if head.direction != "down":
         head.direction = "up"
+    start_game()
 
 def go_down():
     if head.direction != "up":
         head.direction = "down"
+    start_game()
 
 def go_left():
     if head.direction != "right":
         head.direction = "left"
+    start_game()    
 
 def go_right():
     if head.direction != "left":
         head.direction = "right"
+    start_game()    
 
 def move():
     if head.direction == "up":
@@ -93,7 +97,7 @@ def move():
 # Keyboard bindings
 # Bind keys to start and quit functions
 wn.listen()
-wn.onkeypress(start_game, "k")  # Replace "Start" with the actual start key you want to use
+# wn.onkeypress(start_game, "k")  # Replace "Start" with the actual start key you want to use
 wn.onkeypress(quit_game, "q")      # Press 'q' to quit the game
 wn.onkeypress(go_up, "w")
 wn.onkeypress(go_down, "s")
