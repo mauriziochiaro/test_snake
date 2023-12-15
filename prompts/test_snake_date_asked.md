@@ -1,3 +1,5 @@
+CHAT LINK : https://chat.openai.com/share/970651f1-b0bb-4db3-8350-a2f50db76ddc
+
 User
 What day is today?
 
